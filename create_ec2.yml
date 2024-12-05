@@ -12,7 +12,7 @@
       security_group: launch-wizard-1
       network:
         assign_public_ip: true
-      image_id: ami-0d77c9d87c7e619f9  #rhel 9 AMI
+      image_id: "{{ ami_id }}"  #rhel 9 AMI
       region: us-east-2
       tags:
         type: web_servers
